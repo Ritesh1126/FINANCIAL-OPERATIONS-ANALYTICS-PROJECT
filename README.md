@@ -1,24 +1,24 @@
-## 📊 Project Overview
+## Project Overview
 
 A comprehensive end-to-end financial analytics project covering revenue forecasting, customer churn prediction, and profitability analysis for SaaS/subscription-based businesses.
 
-### 🎯 Business Objectives
+## Business Objectives
 
-1. **Revenue Forecasting** - Predict future revenue with 90%+ accuracy using time series models
-2. **Churn Prediction** - Identify at-risk customers before they leave
-3. **Profitability Analysis** - Segment customers and optimize resource allocation
-4. **Cohort Analysis** - Track customer behavior and retention over time
+1. Revenue Forecasting** - Predict future revenue with 90%+ accuracy using time series models
+2. Churn Prediction** - Identify at-risk customers before they leave
+3. Profitability Analysis** - Segment customers and optimize resource allocation
+4. Cohort Analysis** - Track customer behavior and retention over time
 
-### 💡 Key Results
+## Key Results
 
-- 📈 **Revenue Forecast**: ${forecast.sum():,.0f} predicted for next 12 months
-- 🎯 **Churn Model Accuracy**: {churn_results[best_churn_model_name]['roc_auc']:.1%} ROC AUC
-- 💰 **Identified Value**: ${at_risk_mrr * 12:,.0f} annual revenue at risk
-- 👥 **Customer Segments**: {optimal_k} distinct groups with targeted strategies
+- Revenue Forecast**: ${forecast.sum():,.0f} predicted for next 12 months
+- Churn Model Accuracy**: {churn_results[best_churn_model_name]['roc_auc']:.1%} ROC AUC
+- Identified Value**: ${at_risk_mrr * 12:,.0f} annual revenue at risk
+- Customer Segments**: {optimal_k} distinct groups with targeted strategies
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 financial-operations-analytics/
 │
@@ -57,28 +57,28 @@ financial-operations-analytics/
 
 ---
 
-## 🔬 Analytics Techniques Implemented
+##  Analytics Techniques Implemented
 
-### Time Series Analysis
-- **ARIMA/SARIMA** modeling for revenue forecasting
-- **Facebook Prophet** for seasonality detection
-- **Seasonal Decomposition** (trend, seasonal, residual)
-- **Stationarity Testing** (ADF test)
-- **ACF/PACF Analysis** for parameter selection
+##Ti me Series Analysis
+- ARIMA/SARIMA modeling for revenue forecasting
+- Facebook Prophet for seasonality detection
+- Seasonal Decomposition (trend, seasonal, residual)
+- Stationarity Testing (ADF test)
+- ACF/PACF Analysis for parameter selection
 
-### Machine Learning
-- **Logistic Regression** (baseline churn model)
-- **Random Forest Classifier** (ensemble churn prediction)
-- **Gradient Boosting** (advanced churn modeling)
-- **K-Means Clustering** (customer segmentation)
-- **Feature Importance Analysis**
+## Machine Learning
+- Logistic Regression (baseline churn model)
+- Random Forest Classifier (ensemble churn prediction)
+- Gradient Boosting (advanced churn modeling)
+- K-Means Clustering (customer segmentation)
+- Feature Importance Analysis
 
-### Customer Analytics
-- **Cohort Analysis** (retention tracking)
-- **RFM Segmentation** (Recency, Frequency, Monetary)
-- **Customer Lifetime Value (CLV)** calculation
-- **Survival Analysis** concepts
-- **Revenue Cohort Analysis**
+## Customer Analytics
+- Cohort Analysis (retention tracking)
+- RFM Segmentation (Recency, Frequency, Monetary)
+- Customer Lifetime Value (CLV) calculation
+- Survival Analysis concepts
+- Revenue Cohort Analysis
 
 ### Statistical Analysis
 - **Regression Analysis** (revenue drivers)
