@@ -118,7 +118,7 @@ python financial_analytics.py
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 ```
 pandas>=1.3.0
 numpy>=1.21.0
@@ -152,7 +152,7 @@ scipy>=1.7.0
 
 ---
 
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 ### Technical Skills
 ✅ Time series forecasting (ARIMA, Prophet)  
@@ -170,7 +170,7 @@ scipy>=1.7.0
 
 ---
 
-## 📈 Key Findings & Recommendations
+## Key Findings & Recommendations
 
 ### Revenue Insights
 - Revenue growing at **{revenue_growth_rate:+.1f}%** over 6-month period
@@ -211,7 +211,7 @@ scipy>=1.7.0
 
 ---
 
-## 🔍 Methodology Details
+## Methodology Details
 
 ### 1. Data Generation
 Since this is a teaching project, we generated realistic synthetic data:
@@ -248,52 +248,8 @@ Since this is a teaching project, we generated realistic synthetic data:
 
 ---
 
-## 💻 Code Examples
 
-### Time Series Forecasting
-```python
-from statsmodels.tsa.arima.model import ARIMA
-
-# Fit ARIMA model
-model = ARIMA(train_data, order=(p, d, q))
-fitted_model = model.fit()
-
-# Forecast
-forecast = fitted_model.forecast(steps=12)
-```
-
-### Churn Prediction
-```python
-from sklearn.ensemble import RandomForestClassifier
-
-# Train model
-rf_model = RandomForestClassifier(
-    n_estimators=100,
-    class_weight='balanced'
-)
-rf_model.fit(X_train, y_train)
-
-# Predict churn probability
-churn_prob = rf_model.predict_proba(X_test)[:, 1]
-```
-
-### RFM Segmentation
-```python
-# Calculate RFM scores
-rfm = customers.groupby('customer_id').agg({{
-    'transaction_date': lambda x: (reference_date - x.max()).days,
-    'transaction_id': 'count',
-    'amount': 'sum'
-}})
-rfm.columns = ['recency', 'frequency', 'monetary']
-
-# Create segments
-rfm['segment'] = pd.qcut(rfm['recency'], q=5, labels=[5,4,3,2,1])
-```
-
----
-
-## 📚 Resources & References
+## Resources & References
 
 ### Datasets
 - Synthetic data generated for teaching purposes
@@ -312,7 +268,7 @@ rfm['segment'] = pd.qcut(rfm['recency'], q=5, labels=[5,4,3,2,1])
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
 This project template can be adapted for:
 - **SaaS Companies**: Subscription revenue forecasting
@@ -323,7 +279,7 @@ This project template can be adapted for:
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - [ ] Real-time prediction API (Flask/FastAPI)
 - [ ] Interactive dashboard (Plotly Dash/Streamlit)
@@ -336,6 +292,6 @@ This project template can be adapted for:
 
 ---
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see below:
